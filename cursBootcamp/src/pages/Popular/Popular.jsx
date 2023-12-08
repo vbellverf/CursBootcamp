@@ -9,7 +9,7 @@ export default function Popular () {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(
+        fetch( `https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}`,
         )
           .then((response) => {
             if (response.status === 200) {

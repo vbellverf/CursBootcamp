@@ -1,6 +1,6 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Todos from './pages/Todos/Todos'
-import BotonSuma from './pages/BotonSuma/BotonSuma'
+//import Todos from './pages/Todos/Todos'
+//import BotonSuma from './pages/BotonSuma/BotonSuma'
 import Popular from './pages/Popular/Popular'
 import Header from './common/Header/Header'
 
@@ -11,19 +11,6 @@ import Header from './common/Header/Header'
 
 function App() {
   return (
-    <div> 
-      <Popular />
-    </div>  
-  )
-}
-
-export default App
-
-
-
-/*
-function App() {
-  return (
     <main> 
       <BrowserRouter>
         <header>
@@ -31,10 +18,8 @@ function App() {
         </header>
         <section>
           <Routes>
-            <Route path="/" element={ <></> } />
-            <Route path="/Todos" element={ <Todos /> } />
-            <Route path="/BotonSuma" element={ <BotonSuma />} />
-            <Route path="/Videoclub" element={<Popular />} />
+            <Route path="/popular" element={<Popular />} />
+            <Route path="*" element={<h1 style={ {textAlign: 'center'} }>Pàgina en Construcció</h1>} />
           </Routes>
         </section>
       </BrowserRouter>
@@ -43,4 +28,3 @@ function App() {
 }
 
 export default App
-*/
