@@ -33,7 +33,7 @@ export default function Popular () {
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
           alt={movie.title}
           />
-          <div className="movie-title">{movie.name}</div>
+          <div className="movie-title">{movie.original_name}</div>
           </div>
 			  ))}
 		  </div>

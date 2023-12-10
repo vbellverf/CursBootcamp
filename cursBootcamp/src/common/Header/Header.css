@@ -3,8 +3,6 @@
     padding: 0;
     height: 2em;
 
-    
-
     background-color: cornflowerblue;
 
     display: flex;
@@ -13,8 +11,18 @@
     align-items: center;
 }
 
-body a {
-    font-weight: 500;
-    color: yellow;
-    text-decoration: inherit;
+.HeaderDesign a {
+    text-decoration: none;
+    color: white;
   }
+
+.HeaderDesign a:hover {
+    color: #ffcc00; /* Cambia el color al pasar el ratón sobre el enlace */
+    border-bottom: 2px solid #ffcc00; /* Añade un subrayado al pasar el ratón sobre el enlace */
+}
+
+.HeaderDesign a:active,
+.HeaderDesign a.active {
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600;
+}
