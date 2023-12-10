@@ -1,15 +1,15 @@
-import './Popular.css'
+//import './UpComing.css'
 import { useEffect, useState } from "react";
 
 const API_KEY = "accc61299ab9777706ddd0c43a8ef8e7";
 
-export default function Popular () {
+export default function UpComing () {
 
     const [data, setData] = useState([]);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch( `https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}`,
+        fetch( `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}`,
         )
           .then((response) => {
             if (response.status === 200) {
@@ -21,9 +21,6 @@ export default function Popular () {
           })
           .then((data) => setData(data.results))
           .catch((error) => setError(error.message));
-
-         
-
     }, []);
 
     return (
