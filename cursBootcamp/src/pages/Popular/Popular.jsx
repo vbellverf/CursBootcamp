@@ -1,4 +1,3 @@
-import { json } from 'react-router-dom';
 import './Popular.css'
 import { useEffect, useState } from "react";
 

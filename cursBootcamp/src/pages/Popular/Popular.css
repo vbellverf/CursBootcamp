@@ -15,6 +15,7 @@
     position: relative;
     width: 100%;
     height: 100%;
+    cursor: pointer;
     }
     
 .movie-card img {
@@ -35,7 +36,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
     }
-        
+
+    .movie-card:hover .movie-title {
+        opacity: 1;
+    }
+      
+    .movie-card:hover img {
+        transform: scale(1.1);
+    }
+    
         
         

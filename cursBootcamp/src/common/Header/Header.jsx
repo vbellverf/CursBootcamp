@@ -10,8 +10,6 @@ export default function Header () {
       setActiveLink(index);
     }
 
-
-
     return (
         <nav className="HeaderDesign">
             <Link
