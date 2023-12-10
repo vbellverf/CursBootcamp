@@ -21,7 +21,8 @@ function App() {
         <section>
           <Routes>
             <Route path="/popular" element={<Popular />} />
-            
+            <Route path="/toprated" element={<TopRated />} />
+            <Route path="/upcoming" element={<UpComing />} />
             <Route path="*" element={<h1 style={ {textAlign: 'center'} }>Pàgina en Construcció</h1>} />
           </Routes>
         </section>

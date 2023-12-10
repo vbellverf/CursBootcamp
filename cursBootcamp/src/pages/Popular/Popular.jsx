@@ -1,3 +1,4 @@
+import { json } from 'react-router-dom';
 import './Popular.css'
 import { useEffect, useState } from "react";
 
@@ -22,8 +23,6 @@ export default function Popular () {
           .then((data) => setData(data.results))
           .catch((error) => setError(error.message));
 
-         
-
     }, []);
 
     return (
@@ -34,7 +33,7 @@ export default function Popular () {
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
           alt={movie.title}
           />
-          <div className="movie-title">{movie.title}</div>
+          <div className="movie-title">{movie.name}</div>
           </div>
 			  ))}
 		  </div>
