@@ -47,14 +47,3 @@ export default function Header () {
     );
 
 };
-
-/*
---------------------------------------------------------------------------
-return (
-        <nav className="HeaderDesign">
-            <Link to="/Todos">Todos</Link>
-            <Link to="/BotonSuma">Boton Suma</Link> 
-            <Link to="/VideoClub">VideoClub</Link>
-        </nav>
-    )
-*/
