@@ -1,3 +1,59 @@
+.myDesign {
+  background-color: aqua;
+  height: 100vw;
+}
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+  }
+
+.movie-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  }
+  
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+      
+.movie-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  }
+
+  .movie-card:hover .movie-title {
+      opacity: 1;
+  }
+    
+  .movie-card:hover img {
+      transform: scale(1.1);
+  }
+
+
+
+
+
+
+/* Original
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -66,3 +122,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+*/

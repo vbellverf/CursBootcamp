@@ -1,4 +1,4 @@
-import './Popular.css'
+//import './Popular.css'
 import { useEffect, useState } from "react";
 
 const API_KEY = "accc61299ab9777706ddd0c43a8ef8e7";
