@@ -14,7 +14,7 @@ const MovieDetails = ({ movie, onClose }) => {
       <div className="details">
         <h2>{movie.original_name}</h2>
         <p>{movie.overview}</p>
-        {/* Agrega más detalles según tus necesidades */}
+        {/* Posar mes coses */}
       </div>
     </div>
   );
