@@ -29,6 +29,15 @@ export default function Header () {
             </Link>
 
             <Link
+                to="/"
+                className={activeLink === 1 ? 'active' : ''}
+                onClick={() => handleLinkClick(5)}
+            >
+                <img src={"./public/Home-icon.png"} alt="Inici" />
+            </Link>
+
+
+            <Link
                 to="/upComing"
                 className={activeLink === 2 ? 'active' : ''}
                 onClick={() => handleLinkClick(2)}

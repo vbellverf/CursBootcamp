@@ -17,8 +17,10 @@
   }
 
 .HeaderDesign a:hover {
-    color: #ffcc00; /* Cambia el color al pasar el ratón sobre el enlace */
-    border-bottom: 2px solid #ffcc00; /* Añade un subrayado al pasar el ratón sobre el enlace */
+    color: #ffcc00; /* Cambia el color al pasar el ratón 
+    sobre el enlace */
+    border-bottom: 2px solid #ffcc00; /* Añade un subrayado al 
+    pasar el ratón sobre el enlace */
 }
 
 .HeaderDesign a:active,
