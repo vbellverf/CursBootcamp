@@ -1,0 +1,26 @@
+.container {
+    margin-top: 0.5em;
+    padding: 0;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.fondo {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 600px;
+}
+
+.original {
+    display: flex;
+    height: 2em;
+    z-index: 1;
+    color: blue;
+    font-size: 2em;
+    margin-top: -12em;
+}

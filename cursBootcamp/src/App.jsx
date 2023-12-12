@@ -5,6 +5,7 @@ import Popular from './pages/Popular/Popular'
 import TopRated from './pages/TopRated/TopRated'
 import Header from './common/Header/Header'
 import UpComing from "./pages/UpComing/UpComing";
+import Principal from "./pages/Principal/Principal"
 
 // Desactivem el arxiu css
 //import './App.css'
@@ -20,6 +21,7 @@ function App() {
         </header>
         <section>
           <Routes>
+            <Route path="/" element={<Principal />} />
             <Route path="/popular" element={<Popular />} />
             <Route path="/toprated" element={<TopRated />} />
             <Route path="/upcoming" element={<UpComing />} />
