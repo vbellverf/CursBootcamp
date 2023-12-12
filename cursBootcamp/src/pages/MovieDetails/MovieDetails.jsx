@@ -1,20 +1,12 @@
 import React from 'react';
 import './MovieDetails.css';
-import { useParams } from 'react-router-dom';
 
 
 const MovieDetails = ({ movie, onClose }) => {
 
-  // Obtén el parámetro de ruta 'id'
-  //const { id } = useParams();
-
-  
-
   if (!movie) {
-    
     return <div>No hay información de la película</div>;
   }
-
 
   return (
     <div className="movie-details">

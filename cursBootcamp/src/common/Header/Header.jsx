@@ -1,7 +1,6 @@
 import "./Header.css"
 import { Link } from 'react-router-dom'
 import React, { useState } from 'react';
-import Search from '../../pages/Search/Search';
 
 
 export default function Header() {
@@ -12,7 +11,6 @@ export default function Header() {
     }
 
     const handleSearch = (query) => {
-        // Puedes realizar la lógica de búsqueda aquí, por ejemplo, redirigir a la página de búsqueda
         console.log(`Buscar películas con la consulta: ${query}`);
     };
 
@@ -65,8 +63,3 @@ export default function Header() {
     );
 
 };
-
-/*
-{ Agrega el componente de búsqueda }
-<Search onSearch={handleSearch} />
-*/

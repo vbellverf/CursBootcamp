@@ -3,6 +3,8 @@ import MovieList from '../../common/MovieList/MovieList';
 import { searchMovies } from '../../services/movieService';
 import MovieDetails from '../MovieDetails/MovieDetails'; // Importa el componente MovieDetails
 import { useNavigate } from 'react-router-dom';
+import './Search.css'
+
 
 const Search = () => {
   const [query, setQuery] = useState('');
@@ -40,13 +42,13 @@ const Search = () => {
     <div>
       <input
         type="text"
-        placeholder="Buscar películas..."
+        placeholder="Search Movies..."
         value={query}
         onChange={handleInputChange}
       />
-      <button onClick={handleSearch}>Buscar</button>
+      <button onClick={handleSearch}>Search</button>
 
-      <h2>Resultados de la búsqueda:</h2>
+      <h2>Search Results:</h2>
       <MovieList
         movies={searchResults}
         onMovieClick={handleMovieClick}

@@ -6,11 +6,7 @@ import UpComing from "./pages/UpComing/UpComing";
 import Principal from "./pages/Principal/Principal"
 import Search from "./pages/Search/Search"
 import MovieDetails from "./pages/MovieDetails/MovieDetails";
-
-// Desactivem el arxiu css
 //import './App.css'
-
-//Instal·lar: npm i react-router-dom
 
 function App() {
   return (
