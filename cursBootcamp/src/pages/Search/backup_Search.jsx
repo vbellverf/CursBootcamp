@@ -1,14 +1,14 @@
+// Search.jsx
+import './Search.css';
 import React, { useState } from 'react';
 import MovieList from '../../common/MovieList/MovieList';
-import { searchMovies } from '../../services/movieService';
-import MovieDetails from '../MovieDetails/MovieDetails'; // Importa el componente MovieDetails
-import { useNavigate } from 'react-router-dom';
+import { searchMovies } from '../../services/movieService'; // Ajusta la ruta según tu estructura
+import { Navigate, useNavigate } from 'react-router-dom'; // Importa useNavigate
 
 const Search = () => {
   const [query, setQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  const [selectedMovie, setSelectedMovie] = useState(null);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Obtiene la función navigate de react-router-dom
 
   const handleInputChange = (event) => {
     setQuery(event.target.value);
@@ -24,16 +24,8 @@ const Search = () => {
   };
 
   const handleMovieClick = (movie) => {
-    setSelectedMovie(movie);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedMovie(null);
-  };
-
-  const handleMovieDetailsClick = (movieId) => {
     // Navega a la página de detalles con el ID de la película
-    navigate(`/movie/${movieId}`);
+    navigate(`/movie/${movie.id}`);
   };
 
   return (
@@ -47,15 +39,7 @@ const Search = () => {
       <button onClick={handleSearch}>Buscar</button>
 
       <h2>Resultados de la búsqueda:</h2>
-      <MovieList
-        movies={searchResults}
-        onMovieClick={handleMovieClick}
-        onMovieDetailsClick={handleMovieDetailsClick} // Agrega esta prop
-      />
-
-      {selectedMovie && (
-        <MovieDetails movie={selectedMovie} onClose={handleCloseModal} />
-      )}
+      <MovieList movies={searchResults} onMovieClick={handleMovieClick} />
     </div>
   );
 };

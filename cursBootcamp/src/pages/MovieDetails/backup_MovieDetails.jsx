@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 const MovieDetails = ({ movie, onClose }) => {
 
   // Obtén el parámetro de ruta 'id'
-  //const { id } = useParams();
+  const { id } = useParams();
 
   
 
@@ -14,6 +14,7 @@ const MovieDetails = ({ movie, onClose }) => {
     
     return <div>No hay información de la película</div>;
   }
+  
 
 
   return (
